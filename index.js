@@ -40,17 +40,15 @@ function showNewExpenseOnScreen(expense){
 }
 
 
-//edit user 
+//edit expense
 function editExpense(descriptionId , expenseAmount , category){
     document.getElementById('description').value=descriptionId;
     document.getElementById('expenseamount').value=expenseAmount;
     document.getElementById('category').value=category;
-
     deleteExpense(descriptionId);
-    
 }
 
-//delete user 
+//delete expense 
 function deleteExpense(descriptionId){
     console.log(descriptionId);
     localStorage.removeItem(descriptionId);
